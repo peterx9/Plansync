@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanSync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PlanSync</h1>
+        <div class="auth-buttons">
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+        </div>
+        <button id="toggleMode">Dark Mode</button>
+    </header>
+    <main>
+        <div id="personalTasks" class="task-list">
+            <h2>Personal Tasks</h2>
+        </div>
+        <div id="workTasks" class="task-list">
+            <h2>Work Tasks</h2>
+        </div>
+        <div id="completedTasks" class="task-list">
+            <h2>Completed Tasks</h2>
+        </div>
+        <div id="taskForm" class="task-form">
+            <h2>Create New Task</h2>
+            <div class="input-group">
+                <input type="text" id="taskTitle" placeholder="Task Title">
+                <input type="text" id="taskTime" placeholder="Task Time">
+            </div>
+            <div class="task-type">
+                <label>
+                    <input type="radio" name="taskType" value="personal" checked> Personal Task
+                </label>
+                <label>
+                    <input type="radio" name="taskType" value="work"> Work Task
+                </label>
+            </div>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+            </div>
+            <button id="loginSubmitBtn">Login</button>
+        </div>
+        
+        <!-- Register Form -->
+        <div id="registerForm" class="auth-form">
+            <h2>Register</h2>
+            <div class="input-group">
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+            </div>
+            <button id="registerSubmitBtn">Register</button>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

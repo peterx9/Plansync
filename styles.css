@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Reset and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.task-list {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.task-list h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.task-form {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.task-form h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.task-form .input-group {
+    display: flex;
+}
+
+.task-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    color: #333;
+    margin-right: 10px; 
+}
+
+.task-form .task-type {
+    margin-bottom: 10px;
+}
+
+.task-form .task-type label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.task-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.task-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Auth Forms Styling */
+.auth-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auth-form h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.auth-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.auth-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.auth-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Task Item Styling */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+}
+
+.list-item button {
+    margin-left: 10px;
+}
